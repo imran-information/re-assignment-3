@@ -58,18 +58,49 @@
 </head>
 
 <body class="font-manrope">
-    <!-- header section -->
-    <header class="md:container mx-auto">
-        <!-- navber sectin -->
-        <nav">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <a class="bg-arrow-primary px-2 py-1 rounded-full"><i
-                            class="fa-solid fa-arrow-right -rotate-45 text-white "></i></a>
-                    <a class="text-3xl font-bold ps-2">Rinterio</a>
+
+    <!-- navber sectin -->
+    <nav class="sticky backdrop-blur-md top-0 z-50">
+        <div class="md:container mx-auto navbar">
+            <div class="navbar-start">
+                <a class="bg-arrow-primary px-2 py-1 rounded-full"><i
+                        class="fa-solid fa-arrow-right -rotate-45 text-white "></i></a>
+                <a class="text-3xl font-bold ps-2">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold text-lg">Home</a></li>
+                    <li><a class="text-lg font-semibold">Services</a></li>
+                    <li><a class="text-lg font-semibold">Portfolio</a></li>
+                    <li><a class="text-lg font-semibold">Blogs</a></li>
+                    <li><a class="text-lg font-semibold">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <div class="flex gap-4">
+                    <div class="hidden md:block">
+                        <a class="border border-black bg-white px-2 py-1 rounded-full"><i
+                                class="fa-solid fa-magnifying-glass  text-gray-500"></i></a>
+                    </div>
+                    <div class="hidden md:block">
+                        <a class="border border-black bg-white px-2 py-1 rounded-full"><i
+                                class="fa-solid fa-cart-shopping  text-gray-500 "></i></a>
+                    </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                <div class="hidden md:block">
+                    <a class="btn bg-btn-primary md:text-xl font-bold rounded-full">Book Consult <i
+                            class="fa-solid fa-arrow-right-long text-white bg-black px-2 py-2 rounded-full -rotate-45"></i></a>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden end-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-2">
                         <li><a class="font-bold">Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
@@ -77,61 +108,31 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-4">
-                    <div class="flex gap-4">
-                        <div class="hidden md:block">
-                            <a class="border border-black bg-white px-2 py-1 rounded-full"><i
-                                    class="fa-solid fa-magnifying-glass  text-gray-500"></i></a>
-                        </div>
-                        <div class="hidden md:block">
-                            <a class="border border-black bg-white px-2 py-1 rounded-full"><i
-                                    class="fa-solid fa-cart-shopping  text-gray-500 "></i></a>
-                        </div>
-                    </div>
-                    <div class="hidden md:block">
-                        <a class="btn bg-btn-primary md:text-xl font-bold rounded-full">Book Consult <i
-                                class="fa-solid fa-arrow-right-long text-white bg-black px-2 py-2 rounded-full -rotate-45"></i></a>
-                    </div>
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden end-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-2">
-                            <li><a class="font-bold">Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header  -->
+    <header class="md:container mx-auto">
+        <!-- banner  -->
+        <div class="card bg-base-100 w-full">
+            <figure class="px-10 pt-10">
+                <img class="items-center" src="images/banner.png" alt="">
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="text-6xl font-extrabold mb-8">A barn house of this design has a <br> striking appearance
+                </h2>
+                <p class="text-[#494949] mb-8">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring weathered wood, sleek metal <br>
+                    accents, and large windows that flood the space with natural light.
+                </p>
+                <div class="text-center w-full md:w-56">
+                    <a class="btn bg-btn-secondary md:text-xl font-bold rounded-full w-3/4 md:w-56 my-8">View
+                        Details <i
+                            class="fa-solid fa-arrow-right-long text-white bg-black px-2 py-2 rounded-full -rotate-45"></i></a>
                 </div>
             </div>
-            </nav>
-            <!-- banner section -->
-            <div class="card bg-base-100 w-full">
-                <figure class="px-10 pt-10">
-                    <img class="items-center" src="images/banner.png" alt="">
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="text-6xl font-extrabold mb-8">A barn house of this design has a <br> striking appearance
-                    </h2>
-                    <p class="text-[#494949] mb-8">The barn house captivates with its blend of rustic charm and modern
-                        sophistication, featuring weathered wood, sleek metal <br>
-                        accents, and large windows that flood the space with natural light.
-                    </p>
-                    <div class="text-center w-full md:w-56">
-                        <a class="btn bg-btn-secondary md:text-xl font-bold rounded-full w-3/4 md:w-56 my-8">View
-                            Details <i
-                                class="fa-solid fa-arrow-right-long text-white bg-black px-2 py-2 rounded-full -rotate-45"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
+        </div>
+
 
     </header>
 
